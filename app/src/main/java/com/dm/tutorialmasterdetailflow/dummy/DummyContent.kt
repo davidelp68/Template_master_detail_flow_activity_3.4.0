@@ -4,27 +4,27 @@ import java.util.ArrayList
 import java.util.HashMap
 
 /**
- * Helper class for providing sample content for user interfaces created by
- * Android template wizards.
+ * Classe helper per fornire contenuto di esempio per le interfacce utente create dalle
+ * procedure guidate del modello Android.
  *
- * TODO: Replace all uses of this class before publishing your app.
+ * TODO: Sostituisci tutti gli usi di questa classe prima di pubblicare la tua app.
  */
 object DummyContent {
 
     /**
-     * An array of sample (dummy) items.
+     * Un array di elementi campione (fittizi).
      */
     val ITEMS: MutableList<DummyItem> = ArrayList()
 
     /**
-     * A map of sample (dummy) items, by ID.
+     * Una mappa di elementi campione (fittizi), per ID.
      */
     val ITEM_MAP: MutableMap<String, DummyItem> = HashMap()
 
     private val COUNT = 25
 
     init {
-        // Add some sample items.
+        // Aggiungi alcuni articoli di esempio.
         for (i in 1..COUNT) {
             addItem(createDummyItem(i))
         }
@@ -49,7 +49,7 @@ object DummyContent {
     }
 
     /**
-     * A dummy item representing a piece of content.
+     * Un oggetto fittizio che rappresenta una parte di contenuto.
      */
     data class DummyItem(val id: String, val content: String, val details: String) {
         override fun toString(): String = content
